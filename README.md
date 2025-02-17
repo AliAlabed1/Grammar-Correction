@@ -44,13 +44,14 @@ Since we use **DVC (Data Version Control)** to manage model checkpoints and data
 #### **Creating a Google Service Account**
 
 1. Go to [Google Cloud Console](https://console.cloud.google.com/)
-2. Select your project or create a new one
-3. Navigate to **IAM & Admin > Service Accounts**
-4. Click **Create Service Account**
-5. Fill in the details and create the account
-6. Go to the **Keys** section and click **Add Key > JSON**
-7. Download the JSON file (this is your service account key)
-8. Rename the file to `dvc.json` and move it to the root of the project directory
+2. Select your project or create a new one  
+3. search for Google Drive API and Enable it  
+4. Navigate to **IAM & Admin > Service Accounts**
+5. Click **Create Service Account**
+6. Fill in the details and create the account
+7. Go to the **Keys** section and click **Add Key > JSON**
+8. Download the JSON file (this is your service account key)
+9. Rename the file to `dvc.json` and move it to the root of the project directory
 
 ### **3️⃣ Pull the model with DVC**
 
