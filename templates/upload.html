@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grammar Correction</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="icon" href="data:,">
+</head>
+<body class="bg-gray-100 flex items-center justify-center h-screen">
+
+    <div class="bg-white p-8 rounded-lg shadow-md w-full max-w-lg">
+        <h2 class="text-2xl font-bold mb-4 text-center">Grammar Correction Tool</h2>
+        
+        <textarea id="inputText" class="w-full p-3 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500" rows="4" placeholder="Enter your sentence here..."></textarea>
+        
+        <button id="correctBtn" class="w-full mt-4 bg-blue-500 text-white p-3 rounded-md hover:bg-blue-600 transition">
+            Correct Grammar
+        </button>
+
+        <!-- Loading Spinner (Hidden Initially) -->
+        <div id="loadingSpinner" class="mt-4 flex justify-center hidden">
+            <div class="w-8 h-8 border-4 border-blue-500 border-solid border-t-transparent rounded-full animate-spin"></div>
+        </div>
+
+        <div id="outputDiv" class="mt-4 p-3 bg-gray-50 border border-gray-300 rounded-md hidden">
+            <strong>Corrected Sentence:</strong>
+            <p id="outputText" class="mt-2 text-gray-800"></p>
+        </div>
+    </div>
+
+    <script>
+        document.getElementById("correctBtn").addEventListener("click", async () => {
+            const inputText = document.getElementById("inputText").value;
+            const correctBtn = document.getElementById("correctBtn");
+            const loadingSpinner = document.getElementById("loadingSpinner");
+            const outputDiv = document.getElementById("outputDiv");
+            const outputText = document.getElementById("outputText");
+
+            if (!inputText.trim()) {
+                alert("Please enter a sentence.");
+                return;
+            }
+
+            // Disable button & show spinner
+            correctBtn.disabled = true;
+            correctBtn.innerText = "Processing...";
+            loadingSpinner.classList.remove("hidden");
+
+            try {
+                const response = await fetch("http://127.0.0.1:8000/predict", {
+                    method: "POST",
+                    headers: {
+                        "Content-Type": "application/json"
+                    },
+                    body: JSON.stringify({ sentence: inputText })
+                });
+
+                const data = await response.json();
+                
+                outputText.innerText = data.corrected_sentence;
+                outputDiv.classList.remove("hidden");
+
+            } catch (error) {
+                console.error("Error:", error);
+                alert("An error occurred while processing your request.");
+            } finally {
+                // Re-enable button & hide spinner
+                correctBtn.disabled = false;
+                correctBtn.innerText = "Correct Grammar";
+                loadingSpinner.classList.add("hidden");
+            }
+        });
+    </script>
+
+</body>
+</html>

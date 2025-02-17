@@ -1,0 +1,52 @@
+2025-02-07 17:45:06,968 - app_logger - INFO - df loaded successfully from C:\Users\USER\Desktop\Qufzah\task 7\Grammar correction pipeline/Data/dataset.csv
+2025-02-07 17:58:20,980 - app_logger - INFO - df loaded successfully from C:\Users\USER\Desktop\Qufzah\task 7\Grammar correction pipeline/Data/dataset.csv
+2025-02-07 17:58:20,982 - app_logger - ERROR - The given df is not  a data frame
+2025-02-07 18:00:53,709 - app_logger - INFO - df loaded successfully from C:\Users\USER\Desktop\Qufzah\task 7\Grammar correction pipeline/Data/dataset.csv
+2025-02-07 18:00:53,737 - app_logger - INFO - DF is transformed successfully.
+2025-02-07 18:02:08,063 - app_logger - INFO - df loaded successfully from C:\Users\USER\Desktop\Qufzah\task 7\Grammar correction pipeline/Data/dataset.csv
+2025-02-07 18:02:08,092 - app_logger - INFO - DF is transformed successfully.
+2025-02-07 18:02:40,084 - app_logger - INFO - df loaded successfully from C:\Users\USER\Desktop\Qufzah\task 7\Grammar correction pipeline/Data/dataset.csv
+2025-02-07 18:02:40,098 - app_logger - INFO - DF is transformed successfully.
+2025-02-07 18:32:19,800 - app_logger - INFO - df loaded successfully from C:\Users\USER\Desktop\Qufzah\task 7\Grammar correction pipeline/Data/dataset.csv
+2025-02-07 18:32:19,816 - app_logger - INFO - DF is transformed successfully.
+2025-02-07 18:33:46,523 - app_logger - INFO - df loaded successfully from C:\Users\USER\Desktop\Qufzah\task 7\Grammar correction pipeline/Data/dataset.csv
+2025-02-07 18:33:46,544 - app_logger - INFO - DF is transformed successfully.
+2025-02-08 20:53:03,428 - app_logger - INFO - df loaded successfully from C:\Users\USER\Desktop\Qufzah\task 7\Grammar correction pipeline/Data/dataset.csv
+2025-02-08 20:53:03,469 - app_logger - INFO - DF is transformed successfully.
+2025-02-08 20:57:19,250 - app_logger - INFO - df loaded successfully from C:\Users\USER\Desktop\Qufzah\task 7\Grammar correction pipeline/Data/dataset.csv
+2025-02-08 20:57:19,264 - app_logger - INFO - DF is transformed successfully.
+2025-02-08 21:00:48,071 - app_logger - INFO - df loaded successfully from C:\Users\USER\Desktop\Qufzah\task 7\Grammar correction pipeline/Data/dataset.csv
+2025-02-08 21:00:48,088 - app_logger - INFO - DF is transformed successfully.
+2025-02-08 21:03:22,633 - app_logger - INFO - df loaded successfully from C:\Users\USER\Desktop\Qufzah\task 7\Grammar correction pipeline/Data/dataset.csv
+2025-02-08 21:03:22,672 - app_logger - INFO - DF is transformed successfully.
+2025-02-08 21:04:49,400 - app_logger - INFO - df loaded successfully from C:\Users\USER\Desktop\Qufzah\task 7\Grammar correction pipeline/Data/dataset.csv
+2025-02-08 21:04:49,422 - app_logger - INFO - DF is transformed successfully.
+2025-02-08 21:19:30,439 - app_logger - INFO - df loaded successfully from C:\Users\USER\Desktop\Qufzah\task 7\Grammar correction pipeline/Data/dataset.csv
+2025-02-08 21:19:30,463 - app_logger - INFO - DF is transformed successfully.
+2025-02-08 21:21:01,322 - app_logger - INFO - df loaded successfully from C:\Users\USER\Desktop\Qufzah\task 7\Grammar correction pipeline/Data/dataset.csv
+2025-02-08 21:21:01,336 - app_logger - INFO - DF is transformed successfully.
+2025-02-08 21:22:30,056 - app_logger - INFO - df loaded successfully from C:\Users\USER\Desktop\Qufzah\task 7\Grammar correction pipeline/Data/dataset.csv
+2025-02-08 21:22:30,112 - app_logger - INFO - DF is transformed successfully.
+2025-02-08 21:22:31,285 - app_logger - INFO - Starting T5 model training:
+2025-02-08 21:39:05,475 - app_logger - INFO -         Epoch: 1, Loss: 0.20667955862439197
+2025-02-08 21:40:01,612 - app_logger - INFO -         Epoch: 1, BLUE SCORE: 0.7164970850388056
+2025-02-08 21:47:41,797 - app_logger - INFO - df loaded successfully from C:\Users\USER\Desktop\Qufzah\task 7\Grammar correction pipeline/Data/dataset.csv
+2025-02-08 21:47:41,813 - app_logger - INFO - DF is transformed successfully.
+2025-02-08 21:47:43,146 - app_logger - INFO - Starting T5 model training:
+2025-02-08 22:01:00,134 - app_logger - INFO -         Epoch: 1, Loss: 0.21211177709957826
+2025-02-08 22:01:40,223 - app_logger - INFO -         Epoch: 1, BLUE SCORE: 0.5134350673254165
+2025-02-08 22:14:22,426 - app_logger - INFO -         Epoch: 2, Loss: 0.13136296962266383
+2025-02-08 22:15:03,156 - app_logger - INFO -         Epoch: 2, BLUE SCORE: 0.7884230267130365
+2025-02-08 22:27:50,615 - app_logger - INFO -         Epoch: 3, Loss: 0.12446251997481221
+2025-02-08 22:28:22,922 - app_logger - INFO -         Epoch: 3, BLUE SCORE: 0.783443392431355
+2025-02-08 22:28:22,923 - app_logger - INFO - Fiishing training process.
+2025-02-08 22:28:22,923 - app_logger - INFO - ========================================
+2025-02-08 22:28:22,924 - app_logger - INFO - Evaluating the model:
+2025-02-08 22:29:49,239 - app_logger - INFO -         BLUESCORE:0.75831574438474
+2025-02-08 22:29:49,240 - app_logger - INFO - ========================================
+2025-02-08 22:29:49,241 - app_logger - INFO - Saving pretrained Model...
+2025-02-08 22:29:49,765 - app_logger - ERROR - Error: An Error Error while serializing: IoError(Os { code: 1224, kind: Uncategorized, message: "The requested operation cannot be performed on a file with a user-mapped section open." }) accured while training the model.
+2025-02-09 14:54:00,293 - app_logger - ERROR - ERROR: an Error Incorrect path_or_model_id: 'C:\Users\USER\Desktop\Qufzah\task 7/models/T5_model'. Please provide either the path to a local folder or the repo_id of a model on the Hub. accured while initializing exporterto train the model
+2025-02-09 14:54:00,295 - app_logger - ERROR - ERROR: an error accured: 'NoneType' object has no attribute 'encode'
+2025-02-09 14:55:04,160 - app_logger - ERROR - ERROR: an Error Incorrect path_or_model_id: 'C:\Users\USER\Desktop\Qufzah\task 7/models/T5_model'. Please provide either the path to a local folder or the repo_id of a model on the Hub. accured while initializing exporterto train the model
+2025-02-09 14:55:04,162 - app_logger - ERROR - ERROR: an error accured: 'NoneType' object has no attribute 'encode'

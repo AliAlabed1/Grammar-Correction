@@ -1,0 +1,6 @@
+outs:
+- md5: fc1e70a4f88cdc24f30d5a9a6ce9b67f.dir
+  size: 891646504
+  nfiles: 3
+  hash: md5
+  path: T5_model
