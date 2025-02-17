@@ -34,7 +34,7 @@ The dataset consists of **36 different types of grammatical errors** commonly fo
 ```bash
 git clone https://github.com/AliAlabed1/Grammar-Correction.git
 cd grammar-correction
-py -m pip install requirements.txt
+py -m pip install -r requirements.txt
 ```
 
 ### **2️⃣ Set Up Google Service Account for DVC**
