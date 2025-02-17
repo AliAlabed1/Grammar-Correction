@@ -1,0 +1,22 @@
+# Transformers and Tokenizers
+transformers
+sentencepiece
+torch
+
+# Data Processing
+pandas
+numpy
+scikit-learn
+
+# Deep Learning
+torch
+datasets
+
+# API Deployment
+fastapi
+uvicorn
+
+# DVC for Model Versioning
+dvc
+dvc[gdrive]
+

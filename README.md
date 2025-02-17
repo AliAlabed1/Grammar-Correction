@@ -32,8 +32,9 @@ The dataset consists of **36 different types of grammatical errors** commonly fo
 ### **1️⃣ Clone the Repository**
 
 ```bash
-git clone <repository-url>
+git clone https://github.com/AliAlabed1/Grammar-Correction.git
 cd grammar-correction
+py -m pip install requirements.txt
 ```
 
 ### **2️⃣ Set Up Google Service Account for DVC**
@@ -49,9 +50,9 @@ Since we use **DVC (Data Version Control)** to manage model checkpoints and data
 5. Fill in the details and create the account
 6. Go to the **Keys** section and click **Add Key > JSON**
 7. Download the JSON file (this is your service account key)
-8. Rename the file to \`\` and move it to the root of the project directory
+8. Rename the file to `dvc.json` and move it to the root of the project directory
 
-### **3️⃣ Pull the Data with DVC**
+### **3️⃣ Pull the model with DVC**
 
 After adding the service account JSON key, run the following command to fetch the dataset and model weights:
 
@@ -65,23 +66,26 @@ Navigate to the main source directory:
 
 ```bash
 cd src/main
+py main.py
 ```
+
+you will have 2 choices as following:
+- Train the model   
+- Run the app to predict  
 
 #### **Train the Model**
 
-If you want to **train the model**, choose the first option in the script:
+If you want to **train the model**, choose the first option in the script:  
+This option will load the data pipeline that is described above.  
 
-```bash
-python train.py
-```
 
-#### **Test the Model via FastAPI**
 
-If you want to **test the model**, choose the second option:
+#### **Run the app to predict**
 
-```bash
-uvicorn app:app --reload
-```
+If you want to **test the model**, choose the second option:  
+This option will run FAST API app.  
+
+  
 
 Then, open your browser and visit:
 
@@ -98,17 +102,8 @@ The FastAPI application provides the following endpoints:
 | Method   | Endpoint   | Description                                                                |
 | -------- | ---------- | -------------------------------------------------------------------------- |
 | **POST** | `/predict` | Takes a sentence with grammatical errors and returns the corrected version |
-| **GET**  | `/docs`    | Opens the API documentation and testing interface                          |
+| **GET**  | `/`        | Opens the home page interface                                              |
 
-## Future Improvements
-
-- Increase dataset size for better model generalization
-- Optimize the model for **real-time grammar correction**
-- Deploy as a web-based application
-
-## License
-
-This project is licensed under the MIT License.
 
 ---
 
